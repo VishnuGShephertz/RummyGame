@@ -1,0 +1,140 @@
+2015-08-04 18:08:39,603 - WARNING: Failed Auth. Zone for 98a55948-721d-4303-8 does not exist
+2015-08-04 18:09:08,505 - ERROR: Exception in message received: java.lang.IllegalStateException: javax.crypto.BadPaddingException: Given final block not properly padded
+	at com.shephertz.app42.server.util.AesUtil.fail(AesUtil.java:114)
+	at com.shephertz.app42.server.util.AesUtil.doFinal(AesUtil.java:73)
+	at com.shephertz.app42.server.util.AesUtil.decrypt(AesUtil.java:53)
+	at com.shephertz.app42.server.util.AesHelper.decrypt(AesHelper.java:21)
+	at com.shephertz.app42.server.handler.WarpProtocolHandler.handleAdminRequest(WarpProtocolHandler.java:228)
+	at com.shephertz.app42.server.handler.WarpProtocolHandler.messageReceived(WarpProtocolHandler.java:72)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:690)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$5(DefaultIoFilterChain.java:413)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$5(DefaultIoFilterChain.java:413)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:407)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:236)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$5(DefaultIoFilterChain.java:413)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:74)
+	at org.apache.mina.filter.logging.MdcInjectionFilter.filter(MdcInjectionFilter.java:135)
+	at org.apache.mina.filter.util.CommonEventFilter.messageReceived(CommonEventFilter.java:70)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$5(DefaultIoFilterChain.java:413)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:410)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:710)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$10(AbstractPollingIoProcessor.java:650)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:811)
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:676)
+	at com.sun.crypto.provider.AESCipher.engineDoFinal(AESCipher.java:313)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2086)
+	at com.shephertz.app42.server.util.AesUtil.doFinal(AesUtil.java:64)
+	... 36 more
+ 
+Closing session (0x00000008: nio socket, server, /127.0.0.1:58422 => /127.0.0.1:12346)
+2015-08-04 18:10:21,860 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-04 18:10:21,864 - WARNING: Running with 500 CCU limit
+2015-08-04 18:25:11,716 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-04 18:25:11,721 - WARNING: Running with 500 CCU limit
+2015-08-04 18:29:56,812 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-04 18:29:56,815 - WARNING: Running with 500 CCU limit
+2015-08-04 18:43:14,438 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-04 18:43:14,442 - WARNING: Running with 500 CCU limit
+2015-08-11 15:57:03,549 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-11 15:57:03,636 - WARNING: Running with 500 CCU limit
+2015-08-11 17:14:11,053 - WARNING: Adaptor rejected hh
+2015-08-11 17:14:16,340 - WARNING: Adaptor rejected hh
+2015-08-11 17:14:19,329 - WARNING: Adaptor rejected hh
+2015-08-11 17:15:54,132 - WARNING: Failed to resume sessionhh
+2015-08-11 17:20:07,975 - WARNING: Failed to resume sessionhh
+2015-08-11 17:24:24,277 - WARNING: Adaptor rejected visi
+2015-08-11 17:37:08,689 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-11 17:37:08,754 - WARNING: Running with 500 CCU limit
+2015-08-11 17:37:11,408 - WARNING: Failed to resume sessionddsf
+2015-08-11 17:37:11,591 - WARNING: Failed to resume sessionhh
+2015-08-11 17:39:22,419 - WARNING: Adaptor rejected hh
+2015-08-11 17:39:24,234 - WARNING: Adaptor rejected hh
+2015-08-11 17:39:25,179 - WARNING: Adaptor rejected hh
+2015-08-11 17:39:26,841 - WARNING: Adaptor rejected hh
+2015-08-11 17:40:33,889 - WARNING: Adaptor rejected hh
+2015-08-11 17:45:23,421 - WARNING: Adaptor rejected hh
+2015-08-11 17:45:27,597 - ERROR: LoopTask Caught Exception java.lang.NullPointerException
+	at java.util.Collections$UnmodifiableCollection.<init>(Unknown Source)
+	at java.util.Collections$UnmodifiableList.<init>(Unknown Source)
+	at java.util.Collections.unmodifiableList(Unknown Source)
+	at com.shephertz.app42.server.domain.Room.getJoinedUsers(Room.java:941)
+	at rummydemo.RummyRoomExtension2User.dealNewCards(RummyRoomExtension2User.java:164)
+	at rummydemo.RummyRoomExtension2User.onTimerTick(RummyRoomExtension2User.java:193)
+	at com.shephertz.app42.server.domain.Room.handleTimerTick(Room.java:857)
+	at com.shephertz.app42.server.domain.TurnBasedRoom.handleTimerTick(TurnBasedRoom.java:48)
+	at com.shephertz.app42.server.domain.Zone.handleTimerTick(Zone.java:802)
+	at com.shephertz.app42.server.handler.WarpProtocolHandler.handleTimerTick(WarpProtocolHandler.java:539)
+	at com.shephertz.app42.server.handler.LoopTask.run(WarpProtocolHandler.java:676)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+2015-08-11 17:45:36,527 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:49,704 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:52,519 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:55,106 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:55,398 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:55,694 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:55,995 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:56,161 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:56,619 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:56,818 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:59,513 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:45:59,865 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:46:00,116 - WARNING: Adaptor rejected sdssa
+2015-08-11 17:46:00,311 - WARNING: Adaptor rejected sdssa
+2015-08-11 18:09:33,951 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-11 18:09:33,995 - WARNING: Running with 500 CCU limit
+2015-08-11 18:21:36,057 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-11 18:21:36,068 - WARNING: Running with 500 CCU limit
+2015-08-12 18:25:49,709 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-12 18:25:49,743 - WARNING: Running with 500 CCU limit
+2015-08-12 18:39:14,291 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-12 18:39:14,294 - WARNING: Running with 500 CCU limit
+2015-08-12 18:39:24,786 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:09:23 heartbeat - read: -3469 ms.
+2015-08-12 18:39:24,787 - ERROR: Error in getAllZonesFromHSQLDB java.lang.NullPointerException
+2015-08-12 18:39:35,299 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:09:34 heartbeat - read: -3988 ms.
+2015-08-12 18:39:35,299 - WARNING: Error in createHSQLServiceTable java.lang.NullPointerException
+2015-08-12 18:39:45,537 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:09:44 heartbeat - read: -4226 ms.
+2015-08-12 18:39:45,537 - WARNING: Error in createHSQLMteringTable java.lang.NullPointerException
+2015-08-12 18:39:55,767 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:09:54 heartbeat - read: -4456 ms.
+2015-08-12 18:39:55,767 - WARNING: Error in createHSQLRoomTable java.lang.NullPointerException
+2015-08-12 18:45:49,950 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-12 18:45:49,953 - WARNING: Running with 500 CCU limit
+2015-08-12 18:46:00,805 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:15:59 heartbeat - read: -9428 ms.
+2015-08-12 18:46:00,806 - ERROR: Error in getAllZonesFromHSQLDB java.lang.NullPointerException
+2015-08-12 18:46:11,744 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:16:10 heartbeat - read: -431 ms.
+2015-08-12 18:46:11,744 - WARNING: Error in createHSQLServiceTable java.lang.NullPointerException
+2015-08-12 18:46:22,097 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:16:21 heartbeat - read: -783 ms.
+2015-08-12 18:46:22,097 - WARNING: Error in createHSQLMteringTable java.lang.NullPointerException
+2015-08-12 18:46:32,322 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:16:31 heartbeat - read: -1010 ms.
+2015-08-12 18:46:32,322 - WARNING: Error in createHSQLRoomTable java.lang.NullPointerException
+2015-08-12 18:49:09,418 - WARNING: Error in loading license from server java.lang.Exception: no key in AppConfig.json
+2015-08-12 18:49:09,422 - WARNING: Running with 500 CCU limit
+2015-08-12 18:49:19,918 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:19:18 heartbeat - read: -8605 ms.
+2015-08-12 18:49:19,918 - ERROR: Error in getAllZonesFromHSQLDB java.lang.NullPointerException
+2015-08-12 18:49:30,539 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:19:29 heartbeat - read: -9228 ms.
+2015-08-12 18:49:30,539 - WARNING: Error in createHSQLServiceTable java.lang.NullPointerException
+2015-08-12 18:49:40,766 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:19:39 heartbeat - read: -9455 ms.
+2015-08-12 18:49:40,766 - WARNING: Error in createHSQLMteringTable java.lang.NullPointerException
+2015-08-12 18:49:50,994 - ERROR: Error in getStatement java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@b88f5ef9[file =D:\App42Testing\RummyGame\RummyDemo\Rummy\HSQLDBFile.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-08-12 13:19:49 heartbeat - read: -9676 ms.
+2015-08-12 18:49:50,994 - WARNING: Error in createHSQLRoomTable java.lang.NullPointerException
